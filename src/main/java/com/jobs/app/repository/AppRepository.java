@@ -11,4 +11,5 @@ public interface AppRepository extends JpaRepository<Applications,Long> {
     Page<Applications> findAllByApplicationStatusEquals(ApplicationStatus applicationStatus, Pageable pageRequest);
     List<Applications> findAll();
     Applications findByName(String jobName);
+
 }
