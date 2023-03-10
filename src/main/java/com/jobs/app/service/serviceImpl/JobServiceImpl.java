@@ -25,6 +25,7 @@ public class JobServiceImpl implements JobService {
     @Override
     public ResponseEntity<ApiResponse> saveJobApplication(JobAppDto jobAppDto) {
         Applications jobApp = new Applications();
+
         BeanUtils.copyProperties(jobAppDto,jobApp);
 
         Applications savedApp = appRepository.save(jobApp);
@@ -33,7 +34,7 @@ public class JobServiceImpl implements JobService {
 
     @Override
     public ResponseEntity<ApiResponse> findAllByApplicationStatus(RequestDto request) {
-        Sort sort = Sort.by(request.getSortBy()).ascending();
+        Sort sort = Sort.by(request.getSortBy()).descending();
         Pageable pageRequest = PageRequest.of(request.getPageNumber(), request.getPageSize(), sort);
         Page<Applications> jobApplications;
 
@@ -54,6 +55,7 @@ public class JobServiceImpl implements JobService {
 
             return ResponseEntity.ok(new ApiResponse<>(appRepository.findAll()));
         }
+
     }
 
     @Override
