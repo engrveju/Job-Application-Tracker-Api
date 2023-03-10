@@ -10,4 +10,5 @@ public interface JobService {
     ResponseEntity<ApiResponse> findAllByApplicationStatus(RequestDto request);
 
     ResponseEntity<String> UpdateApplicationStatus(String jobName,String setCurrentStatus);
+
 }

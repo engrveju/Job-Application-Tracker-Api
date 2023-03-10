@@ -30,6 +30,7 @@ public class JobController {
         return jobService.findAllByApplicationStatus(requestDto);
     }
 
+
     @PutMapping("/updateApplication")
     public ResponseEntity<String> updateApplications(@RequestParam String jobName,@RequestParam String setCurrentStatus){
         return jobService.UpdateApplicationStatus(jobName,setCurrentStatus);
