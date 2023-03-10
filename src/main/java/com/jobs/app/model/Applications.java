@@ -29,4 +29,5 @@ public class Applications {
     private LocalDateTime appliedOn;
     @UpdateTimestamp
     private LocalDateTime updated;
+
 }
