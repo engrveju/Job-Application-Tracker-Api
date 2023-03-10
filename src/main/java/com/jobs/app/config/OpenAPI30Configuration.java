@@ -22,4 +22,5 @@ public class OpenAPI30Configuration {
                                 .scheme("bearer")
                                 .bearerFormat("JWT")));
     }
+
 }
