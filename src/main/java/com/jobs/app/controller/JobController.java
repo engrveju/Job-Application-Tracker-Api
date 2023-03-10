@@ -25,7 +25,7 @@ public class JobController {
                 .filter(filter)
                 .pageNumber(pageNumber)
                 .pageSize(10)
-                .sortBy(sortBy.toLowerCase())
+                .sortBy(sortBy)
                 .build();
         return jobService.findAllByApplicationStatus(requestDto);
     }
