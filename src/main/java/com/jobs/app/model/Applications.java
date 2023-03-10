@@ -19,6 +19,7 @@ public class Applications {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String country;
     @Enumerated(EnumType.STRING)
     private ApplicationStatus applicationStatus;
     private String companywebsite;
