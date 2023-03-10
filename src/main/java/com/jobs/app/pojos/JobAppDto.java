@@ -21,4 +21,5 @@ public class JobAppDto {
     private String websiteOfAdvert;
 
 
+
 }
