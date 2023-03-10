@@ -10,4 +10,5 @@ import org.springframework.data.domain.Page;
 @NoArgsConstructor
 public class ApiResponse<T>{
     private T data;
+
 }
