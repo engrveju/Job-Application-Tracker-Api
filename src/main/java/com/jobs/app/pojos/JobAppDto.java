@@ -13,14 +13,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class JobAppDto {
     private String name;
+    private String country;
     @Enumerated(EnumType.STRING)
     private ApplicationStatus applicationStatus;
     private String companywebsite;
     private String websiteofapplication;
     private String websiteOfAdvert;
-    @CreationTimestamp
-    private LocalDateTime appliedOn;
-    @UpdateTimestamp
-    private LocalDateTime updated;
+
 
 }
