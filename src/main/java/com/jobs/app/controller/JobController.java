@@ -20,7 +20,10 @@ public class JobController {
         return jobService.saveJobApplication(jobAppDto);
     }
     @GetMapping("/checkApplication")
-    public ResponseEntity<ApiResponse> checkApplications(@RequestParam String sortBy,@RequestParam String filter,@RequestParam int pageNumber){
+    public ResponseEntity<ApiResponse> checkApplications(
+            @RequestParam(defaultValue = "appliedOn") String sortBy,
+            @RequestParam(defaultValue = "active") String filter,
+            @RequestParam(defaultValue = "0") int pageNumber){
         RequestDto requestDto = RequestDto.builder()
                 .filter(filter)
                 .pageNumber(pageNumber)
@@ -29,6 +32,9 @@ public class JobController {
                 .build();
         return jobService.findAllByApplicationStatus(requestDto);
     }
+
+
+
 
 
     @PutMapping("/updateApplication")
