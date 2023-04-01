@@ -1,0 +1,16 @@
+com/jobs/app/config/Book.class
+com/jobs/app/service/JobService.class
+com/jobs/app/controller/JobController.class
+com/jobs/app/model/Applications$ApplicationsBuilder.class
+com/jobs/app/controller/Main.class
+com/jobs/app/pojos/RequestDto.class
+com/jobs/app/enums/ApplicationStatus.class
+com/jobs/app/pojos/RequestDto$RequestDtoBuilder.class
+com/jobs/app/model/Applications.class
+com/jobs/app/pojos/JobAppDto.class
+com/jobs/app/repository/AppRepository.class
+com/jobs/app/service/serviceImpl/JobServiceImpl.class
+com/jobs/app/pojos/ApiResponse.class
+com/jobs/app/config/Codewars.class
+com/jobs/app/config/OpenAPI30Configuration.class
+com/jobs/app/JobAppApplication.class
